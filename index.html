@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireSync Documentation</title>
+    <link rel="stylesheet" href="/fire-sync-site/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>FireSync Documentation</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#usage">Usage</a></li>
+                <li><a href="#advanced">Advanced Topics</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>FireSync is a powerful tool to manage Firebase Realtime Database with a graphical user interface. It simplifies operations like loading, saving, querying, and modifying data.</p>
+            <h3>Key Features</h3>
+            <ul>
+                <li>Easy Firebase Initialization and Data Loading</li>
+                <li>Intuitive GUI for Data Management</li>
+                <li>Support for CSV Data Import</li>
+                <li>Manage Credentials Securely</li>
+            </ul>
+        </section>
+
+        <section id="getting-started">
+            <h2>Getting Started</h2>
+            <h3>Installation Instructions</h3>
+            <p>To get started with FireSync, follow these steps:</p>
+            <ol>
+                <li>Download and install Python from <a href="https://www.python.org/downloads/" target="_blank">python.org</a>.</li>
+                <li>Install required libraries using pip:
+                    <pre><code>pip install firebase-admin pandas</code></pre>
+                </li>
+                <li>Download FireSync using this link<a href="https://www.mediafire.com/file/mymyumlt4lz61kn/FireSync.exe/file" target="_blank">GitHub repository</a>.</li>
+            </ol>
+
+            <h3>Basic Setup</h3>
+            <p>After installation, follow these steps to set up FireSync:</p>
+            <ol>
+                <li>Obtain Firebase credentials from the Firebase Console. See <a href="https://firebase.google.com/docs/admin/setup" target="_blank">Firebase Setup Guide</a>.</li>
+                <li>Place the Firebase credentials JSON file in your project directory.</li>
+                <li>Run FireSync and load the credentials using the provided GUI.</li>
+            </ol>
+        </section>
+
+        <section id="usage">
+            <h2>Usage</h2>
+            <h3>Loading Firebase Data</h3>
+            <p>After setting up FireSync, you can load data from Firebase Realtime Database. Here’s how:</p>
+            <ol>
+                <li>Open FireSync and select "Load Firebase SDK" from the File menu.</li>
+                <li>Provide the path to your Firebase credentials JSON file and enter the database URL.</li>
+                <li>Click "Load Data" to fetch data from Firebase and display it in the tree view.</li>
+            </ol>
+
+            <h3>Adding and Modifying Data</h3>
+            <p>To add or modify data, use the context menu in the tree view:</p>
+            <ul>
+                <li>Right-click on a node to open the context menu.</li>
+                <li>Select "Add Data" to add new keys or directories.</li>
+                <li>Select "Edit Data" to modify existing data.</li>
+                <li>Select "Remove Data" to delete data.</li>
+            </ul>
+
+            <h3>Importing Data from CSV</h3>
+            <p>You can import data from a CSV file by selecting "Import CSV" from the context menu.</p>
+            <ol>
+                <li>Select a CSV file with keys and values.</li>
+                <li>FireSync will add the data to the selected directory.</li>
+            </ol>
+        </section>
+
+        <section id="advanced">
+            <h2>Advanced Topics</h2>
+            <h3>Troubleshooting</h3>
+            <p>If you encounter issues, check the following:</p>
+            <ul>
+                <li>Ensure Firebase credentials are correct and valid.</li>
+                <li>Check your internet connection and Firebase database URL.</li>
+                <li>Review error messages for guidance.</li>
+            </ul>
+
+            <h3>Common Issues and Solutions</h3>
+            <dl>
+                <dt>Initialization Error</dt>
+                <dd>Verify the Firebase credentials and database URL.</dd>
+                
+                <dt>Data Loading Error</dt>
+                <dd>Ensure Firebase SDK is properly initialized.</dd>
+            </dl>
+        </section>
+
+        <section id="resources">
+            <h2>Resources</h2>
+            <h3>Firebase Documentation</h3>
+            <p>Learn more about Firebase from the official documentation:</p>
+            <ul>
+                <li><a href="https://firebase.google.com/docs" target="_blank">Firebase Documentation</a></li>
+            </ul>
+
+            <h3>Python Resources</h3>
+            <p>Explore Python resources and libraries used in FireSync:</p>
+            <ul>
+                <li><a href="https://docs.python.org/3/" target="_blank">Python Documentation</a></li>
+                <li><a href="https://docs.python.org/3/library/tkinter.html" target="_blank">Tkinter Documentation</a></li>
+            </ul>
+
+            <h3>Contact Us</h3>
+            <p>For further assistance, please reach out to our support team at <a href="mailto:toborobotic@gmail.com">ContactMe</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 FireSync Documentation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
